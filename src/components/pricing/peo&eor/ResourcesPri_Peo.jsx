@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ServicesPEO1 from "../../../assets/images/recrument_1.webp";
-import ServicesPEO2 from "../../../assets/images/recrument_2.webp";
-import ServicesPEO3 from "../../../assets/images/recrument_3.webp";
-import "./Resources_Re.css";
+import ServicesPEO1 from "../../../assets/images/PricingPEO1.png";
+import ServicesPEO2 from "../../../assets/images/PricingPEO2.webp";
+import ServicesPEO3 from "../../../assets/images/PricingPEO3.jpg";
+import "./ResourcesPri_Peo.css";
 
 export default function Resources_Re() {
     const { t } = useTranslation();
@@ -16,20 +16,20 @@ export default function Resources_Re() {
             id: 0,
             img: ServicesPEO1,
             title: t(
-                "Maximizing Talent Acquisition in india: A Comprehensive Guide"
+                "Using PEO Services to Manage Remote Teams in India: Crucial Tools and Strategies"
             ),
             text: t(
-                "Learn key strategies for acquiring top talent in india, from recruitment tips to navigating local hiring practices."
+                "Overview The capacity to efficiently lead distant teams in the era of globalization and digital transformation."
             ),
         },
         {
             id: 1,
             img: ServicesPEO2,
             title: t(
-                "Ensuring HR Compliance in india: What You Need to Know"
+                "A Comprehensive Examination of Important Provisions: An In-Depth Look at Indian Labor Laws"
             ),
             text: t(
-                "Discover the essential steps businesses must take to remain compliant with india's labor laws and regulations."
+                "The difficulties of finding work in India, which is becoming a thriving economic hub in Southeast Asia."
             ),
         },
         {
@@ -37,10 +37,10 @@ export default function Resources_Re() {
             img: ServicesPEO3,
 
             title: t(
-                "The Future of Hiring in Southeast Asia: Trends and Predictions"
+                "The Effect of Executive Placements on Indian Business Growth"
             ),
             text: t(
-                "Stay ahead of the curve with insights into the future trends shaping the hiring landscape across Southeast Asia."
+                "A thriving economy with enormous potential, India has emerged as a major location for corporate growth. As many."
             ),
         },
     ];
