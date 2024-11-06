@@ -20,7 +20,7 @@ function PricingPeoEor() {
   };
 
   const navigateToDetails = (id) => {
-    navigate(`/resources_Re/${id}`);
+    navigate(`/resourcesPri_Peo/${id}`);
   };
 
   const peoResources = [
@@ -28,7 +28,7 @@ function PricingPeoEor() {
       id: 0,
       img: PricingPEO1,
       title:
-        "Using PEO/EOR Services to Manage Remote Teams in India: Crucial Tools and Strategies",
+        "Using PEO Services to Manage Remote Teams in India: Crucial Tools and Strategies",
       text: "Overview The capacity to efficiently lead distant teams in the era of globalization and digital transformation.",
     },
     {
@@ -51,7 +51,7 @@ function PricingPeoEor() {
       {/* Main Pricing Section */}
       <div className="peo-pricing">
         <h2>{t("PRICING")}</h2>
-        <h1>{t("PEO / EOR Price Sheet")}</h1>
+        <h1>{t("PEO Price Sheet")}</h1>
         <div className="peo-pricing-cards">
           {peoPricing.map((data) => (
             <div key={data.id} className="peo-pricing-card">
