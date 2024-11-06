@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import ServicesPEO1 from "../../../assets/images/ServicesPEO1.jpg";
@@ -71,13 +70,7 @@ export default function ResourcesAndArticles() {
               onClick={() => navigateToDetails(ele.id)}
               style={{ cursor: "pointer" }}>
               <img src={ele.img} alt={ele.title} />
-              <div className="pay-resource-card-btn">
-                {ele.resources === " " ? (
-                  " "
-                ) : (
-                  <>{/* Add button or link if needed */}</>
-                )}
-              </div>
+
               <div className="pay-resource-card-text">
                 <h4>{ele.title}</h4>
                 <p>{ele.text}</p>

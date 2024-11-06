@@ -29,7 +29,7 @@ export default function ResourcesDetails() {
       article: t("Articles"),
       resources: t("Resources"),
       title: t(
-        "Using PEO/ s to Manage Remote Teams in India: Crucial Tools and Strategies"
+        "Using PEO to Manage Remote Teams in India: Crucial Tools and Strategies"
       ),
       text: t(
         "Overview In the era of digital change and globalization, the capacity to efficiently lead remote teams."
@@ -58,7 +58,13 @@ export default function ResourcesDetails() {
   return (
     <div className="resource-details">
       <div className="resource-details-card">
-        <img src={resource.img} alt={resource.title} className="resource-img" />
+        <div className="resource-details-card-img">
+          <img
+            src={resource.img}
+            alt={resource.title}
+            className="resource-img"
+          />
+        </div>
         <h2>{resource.title}</h2>
         <p>{resource.text}</p>
         <div className="resource-extra-info"></div>

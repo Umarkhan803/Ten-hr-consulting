@@ -16,11 +16,13 @@ const ResourcesInfo = () => {
     <>
       <div className="resource-details">
         <div className="resource-details-card">
+          {/* <div className="resource-details-card-img"> */}
           <img
             src={resource.img}
             alt={resource.title}
             className="resource-img"
           />
+          {/* </div> */}
           <h2>{resource.title}</h2>
           <p>{resource.text}</p>
 

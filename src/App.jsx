@@ -50,8 +50,8 @@ function App() {
               path="/resourcesDetails/:id"
               element={<ResourcesDetails />}
             />
-             <Route path="/resources_Re/:id" element={<Resources_Re />} />
-             <Route path="/resources_hr/:id" element={<Resources_hr />} />
+            <Route path="/resources_Re/:id" element={<Resources_Re />} />
+            <Route path="/resources_hr/:id" element={<Resources_hr />} />
             <Route path="/resources_manS/:id" element={<Resources_manS />} />
             <Route path="/resources_peo/:id" element={<Resources_peo />} />
             <Route path="/resourceInfo/:id" element={<ResourcesInfo />} />
