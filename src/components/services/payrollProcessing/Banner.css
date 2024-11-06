@@ -1,0 +1,160 @@
+.payroll-landing {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.content-section {
+  width: 50%;
+  margin: 0 40px;
+}
+
+.payroll-landing h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.title {
+  color: #1e3a8a;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  text-align: start;
+}
+
+.description {
+  color: #4b5563;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.schedule-button {
+  background-color: #e79522;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-button:hover {
+  background-color: #db8d21;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.image-section {
+  width: 50%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.main-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .payroll-landing {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .main-image {
+    width: 90%;
+  }
+
+  .employee-card {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .payroll-list {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .payroll-landing {
+    width: 97.5%;
+  }
+
+  .main-image {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .schedule-button {
+    width: 65%;
+  }
+}
+
+@media (max-width: 550px) {
+  .payroll-landing {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 0 3rem 0;
+  }
+
+  .content-section {
+    width: 100%;
+  }
+
+  .content-section .title {
+    font-size: 21px;
+  }
+
+  .content-section .description {
+    font-size: 12px;
+  }
+
+  .payroll-landing .schedule-button {
+    width: 45%;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .schedule-button {
+    width: 65%;
+  }
+}
+
+@media (max-width: 468px) {
+  .content-section {
+    margin: 0 15px;
+  }
+
+  .payroll-landing .schedule-button {
+    width: 50%;
+    font-size: 12px;
+  }
+}
