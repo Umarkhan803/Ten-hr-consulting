@@ -160,39 +160,24 @@ function PeoEor() {
           ))}
         </div>
       </div>
-
+      
       {/* Resources and Articles Section */}
       <div className="peo-resources">
         <h2>{t("Resources")}</h2>
         <h1>{t("Resources and Articles")}</h1>
         <div className="peo-resource-cards">
-          {peoResources.map((ele, index) => (
-            <>
-              <div key={index} className="peo-resource-card"
-                onClick={() => navigateToDetails(ele.id)}>
-                <img src={ele.img} alt="" />
-                <div className="peo-resource-card-btn">
-{/*                   <button className="peo-resource-article-btn">
-                    {" "}
-                    {ele.article}{" "}
-                  </button> */}
-                  {ele.resources === " " ? (
-                    " "
-                  ) : (
-                    <>
-                      {" "}
-{/*                       <button className="peo-resources-btn">
-                        {ele.resources}
-                      </button> */}
-                    </>
-                  )}
-                </div>
-                <div className="peo-resource-card-text">
-                  <h4>{ele.title} </h4>
-                  <p> {ele.text}</p>
-                </div>
+          {peoResources.map((ele) => (
+            <div
+              key={ele.id}
+              className="peo-resource-card"
+              onClick={() => navigateToDetails(ele.id)}
+            >
+              <img src={ele.img} alt="Resource" />
+              <div className="peo-resource-card-text">
+                <h4>{ele.title}</h4>
+                <p>{ele.text}</p>
               </div>
-            </>
+            </div>
           ))}
         </div>
         <button className="peoResource-btn" onClick={resourcesPage}>
