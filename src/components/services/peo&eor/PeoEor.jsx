@@ -89,7 +89,7 @@ function PeoEor() {
       {/* Solution Section */}
       <div className="peo-solution">
         <h2>{t("PEO")}</h2>
-        <h1>{t(`Advantages of Choosing Recruitindo's PEO Solutions`)}</h1>
+        <h1>{t(`Advantages of Choosing TEN HR Consulting's PEO Solutions`)}</h1>
         <div className="peo-solution-cards">
           {peoSolutions.map((data) => (
             <div key={data.id} className="peo-solution-card">
