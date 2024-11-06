@@ -13,6 +13,11 @@ function PricingHrConsulting() {
   const handleMoreResourcesClick = () => {
     navigate("/resources"); // Navigate to the resources page
   };
+
+  const navigateToDetails = (id) => {
+    navigate(`/resources_Re/${id}`);
+  };
+
   return (
     <div>
       {/* HR Consulting Price Sheet */}
@@ -48,46 +53,52 @@ function PricingHrConsulting() {
 
       {/* Resources and Articles Section */}
       <div className="resources-articles-section">
-        <h3 className="resources-heading">{t("Resources")}</h3>
-        <h2 className="resources-title">{t("Explore Our Insights & Guides")}</h2>
+        <h3 className="resources-heading">Resources</h3>
+        <h2 className="resources-title">Explore Our Insights & Guides</h2>
         <div className="articles-container">
-          <div className="article">
+          {/* Article 1 */}
+          <div className="article" onClick={() => navigateToDetails(0)}>
             <img
-              src="https://recruitindo.com/wp-content/uploads/2024/01/financial-benefits-1024x688.jpeg"
-              alt={t("Talent Acquisition Guide")}
+            src="https://recruitindo.com/wp-content/uploads/2024/01/financial-benefits-1024x688.jpeg"
+            alt="Talent Acquisition Guide"
               className="article-image"
             />
             <h3 className="article-title">
-              {t("Maximizing Talent Acquisition in india: A Comprehensive Guide")}
+              Maximizing Talent Acquisition in India: A Comprehensive Guide
             </h3>
             <p className="article-description">
-              {t("Learn key strategies for acquiring top talent in india, from recruitment tips to navigating local hiring practices.")}
+              Learn key strategies for acquiring top talent in India, from
+              recruitment tips to navigating local hiring practices.
             </p>
           </div>
-          <div className="article">
+          {/* Article 2 */}
+          <div className="article" onClick={() => navigateToDetails(1)}>
             <img
-              src="https://recruitindo.com/wp-content/uploads/2024/01/Peo-tech-company-1024x683.jpeg"
-              alt={t("HR Compliance")}
+            src="https://recruitindo.com/wp-content/uploads/2024/01/Peo-tech-company-1024x683.jpeg"
+            alt="HR Compliance"
               className="article-image"
             />
             <h3 className="article-title">
-              {t("Ensuring HR Compliance in india: What You Need to Know")}
+              Ensuring HR Compliance in India: What You Need to Know
             </h3>
             <p className="article-description">
-              {t("Discover the essential steps businesses must take to remain compliant with india's labor laws and regulations.")}
+              Discover the essential steps businesses must take to remain
+              compliant with India's labor laws and regulations.
             </p>
           </div>
-          <div className="article">
+          {/* Article 3 */}
+          <div className="article" onClick={() => navigateToDetails(2)}>
             <img
               src="https://recruitindo.com/wp-content/uploads/2024/01/peo-provider-1024x683.jpeg"
-              alt={t("Hiring in Southeast Asia")}
+              alt="Hiring in Southeast Asia"
               className="article-image"
             />
             <h3 className="article-title">
-              {t("The Future of Hiring in Southeast Asia: Trends and Predictions")}
+              The Future of Hiring in Southeast Asia: Trends and Predictions
             </h3>
             <p className="article-description">
-              {t("Stay ahead of the curve with insights into the future trends shaping the hiring landscape across Southeast Asia.")}
+              Stay ahead of the curve with insights into the future trends
+              shaping the hiring landscape across Southeast Asia.
             </p>
           </div>
         </div>
@@ -97,11 +108,13 @@ function PricingHrConsulting() {
             className="more-resources-button"
             onClick={handleMoreResourcesClick}
           >
-            {t("More Resources")}
+            More Resources
           </button>
         </div>
       </div>
     </div>
+
+
   );
 }
 

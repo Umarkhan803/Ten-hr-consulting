@@ -9,6 +9,10 @@ const PricingRecruitment = () => {
     navigate("/applyTalent");
   };
 
+  const navigateToDetails = (id) => {
+    navigate(`/resources_Re/${id}`);
+  };
+
   const handleMoreResourcesClick = () => {
     navigate("/resources");
   };
@@ -65,53 +69,55 @@ const PricingRecruitment = () => {
       {/* Resources and Articles Section */}
       <div className="resources-articles-section">
         <h3 className="resources-heading">Resources</h3>
-        <h2 className="resources-title">Resources & Articles</h2>
+        <h2 className="resources-title">Explore Our Insights & Guides</h2>
         <div className="articles-container">
-          <div className="article">
+          {/* Article 1 */}
+          <div className="article" onClick={() => navigateToDetails(0)}>
             <img
               src="https://recruitindo.com/wp-content/uploads/2024/01/financial-benefits-1024x688.jpeg"
-              alt="PEO/EOR Guide"
+              alt="Talent Acquisition Guide"
               className="article-image"
             />
             <h3 className="article-title">
-              Unlocking the Benefits of PEO/EOR Services for Businesses in
-              india
+              Maximizing Talent Acquisition in India: A Comprehensive Guide
             </h3>
             <p className="article-description">
-              Discover how PEO/EOR services can streamline operations and save
-              costs for businesses expanding in india.
+              Learn key strategies for acquiring top talent in India, from
+              recruitment tips to navigating local hiring practices.
             </p>
           </div>
-          <div className="article">
+          {/* Article 2 */}
+          <div className="article" onClick={() => navigateToDetails(1)}>
             <img
               src="https://recruitindo.com/wp-content/uploads/2024/01/Peo-tech-company-1024x683.jpeg"
-              alt="Tech Expansion"
+              alt="HR Compliance"
               className="article-image"
             />
             <h3 className="article-title">
-              Tech Expansion to india: Key Strategies for Success
+              Ensuring HR Compliance in India: What You Need to Know
             </h3>
             <p className="article-description">
-              Learn how tech companies can leverage local talent and resources
-              to successfully enter the indian market.
+              Discover the essential steps businesses must take to remain
+              compliant with India's labor laws and regulations.
             </p>
           </div>
-          <div className="article">
+          {/* Article 3 */}
+          <div className="article" onClick={() => navigateToDetails(2)}>
             <img
               src="https://recruitindo.com/wp-content/uploads/2024/01/peo-provider-1024x683.jpeg"
-              alt="Choosing a PEO"
+              alt="Hiring in Southeast Asia"
               className="article-image"
             />
             <h3 className="article-title">
-              How to Select the Right PEO Provider for Your Business in
-              india
+              The Future of Hiring in Southeast Asia: Trends and Predictions
             </h3>
             <p className="article-description">
-              Get tips on selecting a PEO provider that aligns with your
-              business goals and ensures compliance with local regulations.
+              Stay ahead of the curve with insights into the future trends
+              shaping the hiring landscape across Southeast Asia.
             </p>
           </div>
         </div>
+
         <div className="more-resources-button-container">
           <button
             className="more-resources-button"

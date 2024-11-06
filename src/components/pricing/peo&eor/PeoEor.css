@@ -201,6 +201,10 @@
   background-color: #db8d21;
 }
 
+.peo-pricing-btn, .peo-resource-card, .peoResource-btn {
+  cursor: pointer;
+}
+
 /*                                    Responsive Styles */
 @media (max-width: 1200px) {
   .peoResource-btn {

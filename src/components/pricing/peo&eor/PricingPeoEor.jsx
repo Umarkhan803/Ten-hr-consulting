@@ -19,12 +19,14 @@ function PricingPeoEor() {
     navigate("/resources");
   };
 
+  const navigateToDetails = (id) => {
+    navigate(`/resources_Re/${id}`);
+  };
+
   const peoResources = [
     {
       id: 0,
       img: PricingPEO1,
-      // article: "Articles",
-      // resources: " ",
       title:
         "Using PEO/EOR Services to Manage Remote Teams in India: Crucial Tools and Strategies",
       text: "Overview The capacity to efficiently lead distant teams in the era of globalization and digital transformation.",
@@ -32,8 +34,6 @@ function PricingPeoEor() {
     {
       id: 1,
       img: PricingPEO2,
-      // article: "Articles",
-      // resources: " ",
       title:
         "A Comprehensive Examination of Important Provisions: An In-Depth Look at Indian Labor Laws",
       text: "The difficulties of finding work in India, which is becoming a thriving economic hub in Southeast Asia.",
@@ -41,8 +41,6 @@ function PricingPeoEor() {
     {
       id: 2,
       img: PricingPEO3,
-      // article: "Articles",
-      // resources: " ",
       title: "The Effect of Executive Placements on Indian Business Growth",
       text: "A thriving economy with enormous potential, India has emerged as a major location for corporate growth. As many.",
     },
@@ -50,7 +48,7 @@ function PricingPeoEor() {
 
   return (
     <div className="peo-container">
-      {/* Main Section */}
+      {/* Main Pricing Section */}
       <div className="peo-pricing">
         <h2>{t("PRICING")}</h2>
         <h1>{t("PEO / EOR Price Sheet")}</h1>
@@ -83,32 +81,18 @@ function PricingPeoEor() {
         <h2>{t("Resources")}</h2>
         <h1>{t("Resources and Articles")}</h1>
         <div className="peo-resource-cards">
-          {peoResources.map((ele, index) => (
-            <>
-              <div key={index} className="peo-resource-card">
-                <img src={ele.img} alt="" />
-                <div className="peo-resource-card-btn">
-{/*                   <button className="peo-resource-article-btn">
-                    {" "}
-                    {t(ele.article)}{" "}
-                  </button> */}
-                  {ele.resources === " " ? (
-                    " "
-                  ) : (
-                    <>
-{/*                       ,{" "} */}
-{/*                       <button className="peo-resources-btn">
-                        {t(ele.resources)}
-                      </button> */}
-                    </>
-                  )}
-                </div>
-                <div className="peo-resource-card-text">
-                  <h4>{t(ele.title)} </h4>
-                  <p> {t(ele.text)}</p>
-                </div>
+          {peoResources.map((resource) => (
+            <div
+              key={resource.id}
+              className="peo-resource-card"
+              onClick={() => navigateToDetails(resource.id)}
+            >
+              <img src={resource.img} alt={resource.title} />
+              <div className="peo-resource-card-text">
+                <h4>{t(resource.title)}</h4>
+                <p>{t(resource.text)}</p>
               </div>
-            </>
+            </div>
           ))}
         </div>
         <button className="peoResource-btn" onClick={resourcesPage}>
