@@ -32,6 +32,7 @@ import Resources_peo from "./components/services/peo&eor/Resources_peo";
 import Resources_Re from "./components/services/recruitment/Resources_Re";
 import Resources_hr from "./components/services/hrConsulting/Resources_hr";
 import Resources_manS from "./components/services/managedServices/Resources_manS";
+import ResourcesPri_Peo from "./components/pricing/peo&eor/ResourcesPri_Peo";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
             <Route path="/services/peo&eor" element={<PeoEor />} />
             <Route path="/services/recruitment" element={<Recruitment />} />
             <Route path="/services/hrConsulting" element={<HrConsulting />} />
+             <Route path="/resourcesPri_Peo/:id" element={<ResourcesPri_Peo />} />
             <Route
               path="/services/payrollProcessing"
               element={<PayrollProcessing />}
