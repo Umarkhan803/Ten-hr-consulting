@@ -22,7 +22,7 @@ function PeoEor() {
   const resourcesPage = () => {
     navigate("/resources");
   };
-   const navigateToDetails = (id) => {
+  const navigateToDetails = (id) => {
     navigate(`/resources_peo/${id}`);
   };
 
@@ -45,7 +45,8 @@ function PeoEor() {
       // article: t("Articles"),
       // resources: t("Resources"),
       title: t(
-        "Using PEO/EOR Services to Manage Remote Teams in India: Crucial Tools and Strategies"
+        // "Using PEO/EOR Services to Manage Remote Teams in India: Crucial Tools and Strategies"
+        "Using  Services to Manage Remote Teams in India: Crucial Tools and Strategies"
       ),
       text: t(
         "Overview In the era of digital change and globalization, the capacity to efficiently lead remote teams."
@@ -66,34 +67,36 @@ function PeoEor() {
   ];
 
   return (
-    <div className="peo-container">
+    <div className='peo-container'>
       {/* Main Section */}
-      <div className="peo-main">
-        <div className="peo-main-image">
-          <img src={peoMainImage} alt="PEO main image" />
+      <div className='peo-main'>
+        <div className='peo-main-image'>
+          <img src={peoMainImage} alt='PEO main image' />
         </div>
-        <div className="peo-main-contant">
-          <h2>{t("PEO")}</h2>
+        <div className='peo-main-contant'>
+          {/* <h2>{t("PEO")}</h2> */}
           <h1>{t("Engage Workforce in India Without Company Registration")}</h1>
           <p>
             {t(
-              "Skip the complexities of launching your own business just to hire local talent. With our PEO solution, you can begin immediately!"
+              // "Skip the complexities of launching your own business just to hire local talent. With our PEO solution, you can begin immediately!"
+              "Skip the complexities of launching your own business just to hire local talent. With our solution, you can begin immediately!"
             )}
           </p>
-          <button className="peo-main-btn" onClick={contactUsPage}>
+          <button className='peo-main-btn' onClick={contactUsPage}>
             {t("Let’s Talk")}
           </button>
         </div>
       </div>
 
       {/* Solution Section */}
-      <div className="peo-solution">
-        <h2>{t("PEO")}</h2>
-        <h1>{t(`Advantages of Choosing TEN HR Consulting's PEO Solutions`)}</h1>
-        <div className="peo-solution-cards">
+      <div className='peo-solution'>
+        {/* <h2>{t("PEO")}</h2> */}
+        {/* <h1>{t(`Advantages of Choosing TEN HR Consulting's PEO Solutions`)}</h1> */}
+        <h1>{t(`Advantages of Choosing TEN HR Consulting's Solutions`)}</h1>
+        <div className='peo-solution-cards'>
           {peoSolutions.map((data) => (
-            <div key={data.id} className="peo-solution-card">
-              <img src={data.image} alt="" />
+            <div key={data.id} className='peo-solution-card'>
+              <img src={data.image} alt='' />
               <h2>{t(data.name)}</h2>
               <p>{t(data.desc)}</p>
             </div>
@@ -102,28 +105,29 @@ function PeoEor() {
       </div>
 
       {/* Benefits Section */}
-      <div className="peo-benefit">
-        <h2>{t("PEO")}</h2>
+      <div className='peo-benefit'>
+        {/* <h2>{t("PEO")}</h2> */}
+        {/* <h1>{t(`Benefits of Using TEN HR Consulting's PEO Service`)}</h1> */}
         <h1>{t(`Benefits of Using TEN HR Consulting's PEO Service`)}</h1>
-        <div className="peo-benefit-cards">
+        <div className='peo-benefit-cards'>
           {peoBenefits.map((data) => (
-            <div key={data.id} className="peo-benefit-card">
+            <div key={data.id} className='peo-benefit-card'>
               {data.id != peoBenefits.length ? (
                 <>
-                  <img src={data.image} alt="" />
+                  <img src={data.image} alt='' />
 
                   <h2>{t(data.name)}</h2>
                   <p>{t(data.desc)}</p>
                 </>
               ) : (
                 <>
-                  <div className="peo-benefit-unique">
+                  <div className='peo-benefit-unique'>
                     <h2>{t(data.name)}</h2>
                     <p>{t(data.desc)}</p>
                     <img
                       onClick={contactUsPage}
                       src={rightArrow}
-                      alt="Right Arrow image"
+                      alt='Right Arrow image'
                     />
                   </div>
                 </>
@@ -134,14 +138,15 @@ function PeoEor() {
       </div>
 
       {/* Pricing PEO EOR */}
-      <div className="peo-pricing">
+      <div className='peo-pricing'>
         <h2>{t("PRICING")}</h2>
-        <h1>{t("PEO / EOR Price Sheet")}</h1>
-        <div className="peo-pricing-cards">
+        {/* <h1>{t("PEO / EOR Price Sheet")}</h1> */}
+        <h1>{t(" Price Sheet")}</h1>
+        <div className='peo-pricing-cards'>
           {peoPricing.map((data) => (
-            <div key={data.id} className="peo-pricing-card">
+            <div key={data.id} className='peo-pricing-card'>
               <h3>{t(data.name)}</h3>
-              <div className="peo-pricing-card-price">
+              <div className='peo-pricing-card-price'>
                 <h5>{t("Starting from")}</h5>
                 <h3>{data.price}</h3>
                 <h5>{t("per employee per month")}</h5>
@@ -153,34 +158,34 @@ function PeoEor() {
                   <li key={index}>{t(item)}</li>
                 ))}
               </ul>
-              <button className="peo-pricing-btn" onClick={contactUsPage}>
+              <button className='peo-pricing-btn' onClick={contactUsPage}>
                 {t("Let’s Talk")}
               </button>
             </div>
           ))}
         </div>
       </div>
-      
+
       {/* Resources and Articles Section */}
-      <div className="peo-resources">
+      <div className='peo-resources'>
         <h2>{t("Resources")}</h2>
         <h1>{t("Resources and Articles")}</h1>
-        <div className="peo-resource-cards">
+        <div className='peo-resource-cards'>
           {peoResources.map((ele) => (
             <div
               key={ele.id}
-              className="peo-resource-card"
+              className='peo-resource-card'
               onClick={() => navigateToDetails(ele.id)}
             >
-              <img src={ele.img} alt="Resource" />
-              <div className="peo-resource-card-text">
+              <img src={ele.img} alt='Resource' />
+              <div className='peo-resource-card-text'>
                 <h4>{ele.title}</h4>
                 <p>{ele.text}</p>
               </div>
             </div>
           ))}
         </div>
-        <button className="peoResource-btn" onClick={resourcesPage}>
+        <button className='peoResource-btn' onClick={resourcesPage}>
           {t("Our Resources")}
         </button>
       </div>

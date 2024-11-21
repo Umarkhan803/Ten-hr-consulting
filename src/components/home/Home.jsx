@@ -19,7 +19,7 @@ function Home() {
     countryCode: "+91 IN",
     phone: "",
     company: "",
-    inquiry: "PEO",
+    // inquiry: "PEO",
     message: "",
   });
   const [formStatus, setFormStatus] = useState(null);
@@ -74,7 +74,7 @@ function Home() {
           countryCode: "+91 IN",
           phone: "",
           company: "",
-          inquiry: "PEO",
+          // inquiry: "PEO",
           message: "",
         });
       } else {
@@ -255,7 +255,7 @@ function Home() {
                       onChange={handleChange}
                       required
                     >
-                      <option value='PEO'>{t("PEO")}</option>
+                      {/* <option value='PEO'>{t("PEO")}</option> */}
                       <option value='Recruitment'>{t("Recruitment")}</option>
                       <option value='HR Consulting'>
                         {t("HR Consulting")}
@@ -293,7 +293,8 @@ function Home() {
 
       <div className='services-section'>
         <h2>{t("WHAT WE DO")}</h2>
-        <h3>{t("Comprehensive HR and PEO Solutions")}</h3>
+        {/* <h3>{t("Comprehensive HR and PEO Solutions")}</h3> */}
+        <h3>{t("Comprehensive HR Solutions")}</h3>
         <div className='slider'>
           <Slider />
         </div>
@@ -377,7 +378,8 @@ function Home() {
           <h2>{t("One-stop HR Service For Your Business")}</h2>
           <p className='one-stop-description'>
             {t(
-              " HR Consulting now assists you in providing HR Management services starting from PEO services. Our fees are competitively priced, saving you price compared to other service providers. We don’t just offer company incorporation HR services; we are your business partner."
+              // " HR Consulting now assists you in providing HR Management services starting from PEO services. Our fees are competitively priced, saving you price compared to other service providers. We don’t just offer company incorporation HR services; we are your business partner."
+            " HR Consulting now assists you in providing HR Management services. Our fees are competitively priced, saving you price compared to other service providers. We don’t just offer company incorporation HR services; we are your business partner."
             )}{" "}
           </p>
 
