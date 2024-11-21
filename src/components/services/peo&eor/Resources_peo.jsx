@@ -7,83 +7,62 @@ import ServicesPEO3 from "../../../assets/images/ServicesPEO3.jpg";
 import "./Resources_peo.css";
 
 export default function Resources_peo() {
-    const { t } = useTranslation();
-    const { id } = useParams();
-    const navigate = useNavigate();
+  const { t } = useTranslation();
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-    const peoResources = [
-        {
-            id: 0,
-            img: ServicesPEO1,
-            title: t(
-                "The Complete Handbook of Executive Search in India: Examining the Economic and Cultural Effects of Poor Hiring"
-            ),
-            text: t(
-                "Overview Finding and keeping top executive talent is essential for the competitive corporate environment of today."
-            ),
-        },
-        {
-            id: 1,
-            img: ServicesPEO2,
-            title: t(
-                "Using PEO to Manage Remote Teams in India: Crucial Tools and Strategies"
-            ),
-            text: t(
-                "Overview In the era of digital change and globalization, the capacity to efficiently lead remote teams."
-            ),
-        },
-        {
-            id: 2,
-            img: ServicesPEO3,
+  const peoResources = [
+    {
+      id: 0,
+      img: ServicesPEO1,
+      title: t(
+        "The Complete Handbook of Executive Search in India: Examining the Economic and Cultural Effects of Poor Hiring"
+      ),
+      text: t(
+        "Overview Finding and keeping top executive talent is essential for the competitive corporate environment of today."
+      ),
+    },
+    {
+      id: 1,
+      img: ServicesPEO2,
+      title: t(
+        // "Using PEO to Manage Remote Teams in India: Crucial Tools and Strategies"
+        "Using Manage Remote Teams in India: Crucial Tools and Strategies"
+      ),
+      text: t(
+        "Overview In the era of digital change and globalization, the capacity to efficiently lead remote teams."
+      ),
+    },
+    {
+      id: 2,
+      img: ServicesPEO3,
 
-            title: t(
-                "Strategic Executive Search Services for Leading Companies in India"
-            ),
-            text: t(
-                "Finding the proper people to run your company in the highly competitive business world of today is more."
-            ),
-        },
-    ];
+      title: t(
+        "Strategic Executive Search Services for Leading Companies in India"
+      ),
+      text: t(
+        "Finding the proper people to run your company in the highly competitive business world of today is more."
+      ),
+    },
+  ];
 
-    const resource = peoResources.find((item) => item.id === parseInt(id));
+  const resource = peoResources.find((item) => item.id === parseInt(id));
 
-    if (!resource) {
-        return <p>{t("Resource not found")}</p>;
-    }
+  if (!resource) {
+    return <p>{t("Resource not found")}</p>;
+  }
 
-    return (
-        <div className="resource-details">
-            <div className="resource-details-card">
-                <img src={resource.img} alt={resource.title} className="resource-img" />
-                <h2>{resource.title}</h2>
-                <p>{resource.text}</p>
-                <div className="resource-extra-info">
-                </div>
-                <button onClick={() => navigate(-1)} className="back-button">
-                    {t("Back to Resources")}
-                </button>
-            </div>
-        </div>
-    );
+  return (
+    <div className='resource-details'>
+      <div className='resource-details-card'>
+        <img src={resource.img} alt={resource.title} className='resource-img' />
+        <h2>{resource.title}</h2>
+        <p>{resource.text}</p>
+        <div className='resource-extra-info'></div>
+        <button onClick={() => navigate(-1)} className='back-button'>
+          {t("Back to Resources")}
+        </button>
+      </div>
+    </div>
+  );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,8 @@
 export const peoPricing = [
   {
     id: 1,
-    name: "PEO Local Employee",
+    // name: "PEO Local Employee",
+    name: "Local Employee",
     price: "IDR 3,000,000",
     include: [
       "Legal document drafting",
@@ -14,7 +15,9 @@ export const peoPricing = [
   },
   {
     id: 2,
-    name: "PEO Foreign Employee",
+    // name: "PEO Foreign Employee",
+    name: "Foreign Employee",
+
     price: "IDR 10,000,000",
     include: [
       "Legal document drafting",
