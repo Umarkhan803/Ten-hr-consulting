@@ -59,7 +59,10 @@ function App() {
             <Route path="/services/peo&eor" element={<PeoEor />} />
             <Route path="/services/recruitment" element={<Recruitment />} />
             <Route path="/services/hrConsulting" element={<HrConsulting />} />
-             <Route path="/resourcesPri_Peo/:id" element={<ResourcesPri_Peo />} />
+            <Route
+              path="/resourcesPri_Peo/:id"
+              element={<ResourcesPri_Peo />}
+            />
             <Route
               path="/services/payrollProcessing"
               element={<PayrollProcessing />}
