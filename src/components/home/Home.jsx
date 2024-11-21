@@ -98,7 +98,9 @@ function Home() {
                 />
                 <p>{t("Join over 250+ businesses that have grown with us")}</p>
               </div>
-              <h1>{t("One platform for hiring Interns")}</h1>
+              {/* <h1>{t("One platform for hiring Interns")}</h1> */}
+              <h1>{t("One platform for hiring Platform")}</h1>
+
               <p>
                 {t(
                   "Hire your team in India immediately without forming a company. We help businesses comply with regulations and streamline their HR processes in Remote Network."
@@ -379,7 +381,7 @@ function Home() {
           <p className='one-stop-description'>
             {t(
               // " HR Consulting now assists you in providing HR Management services starting from PEO services. Our fees are competitively priced, saving you price compared to other service providers. We don’t just offer company incorporation HR services; we are your business partner."
-            " HR Consulting now assists you in providing HR Management services. Our fees are competitively priced, saving you price compared to other service providers. We don’t just offer company incorporation HR services; we are your business partner."
+              " HR Consulting now assists you in providing HR Management services. Our fees are competitively priced, saving you price compared to other service providers. We don’t just offer company incorporation HR services; we are your business partner."
             )}{" "}
           </p>
 

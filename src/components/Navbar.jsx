@@ -121,7 +121,7 @@ const Navbar = ({ isSidebarOpen, handleToggleSidebar }) => {
                     onClick={() => handleLinkClick("services")}
                   >
                     {/* {t("PEO")} */}
-                    {t("Need Title")}
+                    {/* {t("Need Title")} */}
                   </NavLink>
                   <NavLink
                     to='/services/recruitment'
@@ -200,7 +200,7 @@ const Navbar = ({ isSidebarOpen, handleToggleSidebar }) => {
                     onClick={() => handleLinkClick("pricing")}
                   >
                     {/* {t("PEO")} */}
-                    {t("need title")}
+                    {/* {t("need title")} */}
                   </NavLink>
                   <NavLink
                     to='/pricing/recruitment'
@@ -376,7 +376,7 @@ const Navbar = ({ isSidebarOpen, handleToggleSidebar }) => {
                     onClick={() => handleLinkClick("mobileServices", true)}
                   >
                     {/* {t("PEO")} */}
-                    {t("Need Title")}
+                    {/* {t("Need Title")} */}
                   </NavLink>
                   <NavLink
                     to='/services/recruitment'
@@ -453,7 +453,7 @@ const Navbar = ({ isSidebarOpen, handleToggleSidebar }) => {
                     onClick={() => handleLinkClick("mobilePricing", true)}
                   >
                     {/* {t("PEO")} */}
-                    {t("Need Title")}
+                    {/* {t("Need Title")} */}
                   </NavLink>
                   <NavLink
                     to='/pricing/recruitment'
