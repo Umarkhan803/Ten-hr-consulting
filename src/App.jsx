@@ -42,57 +42,57 @@ function App() {
           <ScrollToTop />
           <Navbar />
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/aboutUs' element={<AboutUs />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutUs" element={<AboutUs />} />
             {/* <Route path="/jobVacancies" element={<JobVacancies />} /> */}
-            <Route path='/contactUs' element={<ContactUs />} />
-            <Route path='/resources' element={<Resources />} />
+            <Route path="/contactUs" element={<ContactUs />} />
+            <Route path="/resources" element={<Resources />} />
             <Route
-              path='/resourcesDetails/:id'
+              path="/resourcesDetails/:id"
               element={<ResourcesDetails />}
             />
-            <Route path='/resources_Re/:id' element={<Resources_Re />} />
-            <Route path='/resources_hr/:id' element={<Resources_hr />} />
-            <Route path='/resources_manS/:id' element={<Resources_manS />} />
-            <Route path='/resources_peo/:id' element={<Resources_peo />} />
-            <Route path='/resourceInfo/:id' element={<ResourcesInfo />} />
-            <Route path='/services/peo&eor' element={<PeoEor />} />
-            <Route path='/services/recruitment' element={<Recruitment />} />
-            <Route path='/services/hrConsulting' element={<HrConsulting />} />
+            <Route path="/resources_Re/:id" element={<Resources_Re />} />
+            <Route path="/resources_hr/:id" element={<Resources_hr />} />
+            <Route path="/resources_manS/:id" element={<Resources_manS />} />
+            <Route path="/resources_peo/:id" element={<Resources_peo />} />
+            <Route path="/resourceInfo/:id" element={<ResourcesInfo />} />
+            <Route path="/services/peo&eor" element={<PeoEor />} />
+            <Route path="/services/recruitment" element={<Recruitment />} />
+            <Route path="/services/hrConsulting" element={<HrConsulting />} />
             <Route
-              path='/resourcesPri_Peo/:id'
+              path="/resourcesPri_Peo/:id"
               element={<ResourcesPri_Peo />}
             />
             <Route
-              path='/services/payrollProcessing'
+              path="/services/payrollProcessing"
               element={<PayrollProcessing />}
             />
             <Route
-              path='/services/managedServices'
+              path="/services/managedServices"
               element={<ManagedServices />}
             />
-            <Route path='/pricing/peo&eor' element={<PricingPeoEor />} />
+            <Route path="/pricing/peo&eor" element={<PricingPeoEor />} />
             <Route
-              path='/pricing/recruitment'
+              path="/pricing/recruitment"
               element={<PricingRecruitment />}
             />
-            <Route path='/applyTalent' element={<ApplyTalent />} />
+            <Route path="/applyTalent" element={<ApplyTalent />} />
             <Route
-              path='/pricing/hrConsulting'
+              path="/pricing/hrConsulting"
               element={<PricingHrConsulting />}
             />
             <Route
-              path='/pricing/payrollProcessing'
+              path="/pricing/payrollProcessing"
               element={<PricingPayrollProcessing />}
             />
             <Route
-              path='/pricing/managedServices'
+              path="/pricing/managedServices"
               element={<PricingManagedServices />}
             />
-            <Route path='/calculator' element={<Calculator />} />
-            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-            <Route path='/applyy' element={<Apply />} />
-            <Route path='/FAQ' element={<FAQSection />} />
+            <Route path="/calculator" element={<Calculator />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/applyy" element={<Apply />} />
+            <Route path="/FAQ" element={<FAQSection />} />
           </Routes>
         </BrowserRouter>
       </I18nextProvider>
