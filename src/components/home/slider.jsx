@@ -43,7 +43,8 @@ const slider = [
     description:
       "Let us handle your payroll processing to ensure accuracy and compliance.",
     secondDescription: "We ensure timely and precise payroll management.",
-    learnMoreLink: "http://localhost:5173/services/payrollProcessing",
+    // learnMoreLink: "http://localhost:5173/services/payrollProcessing",
+    learnMoreLink: "https://tenhrconsulting.vercel.app/services/payrollProcessing",
   },
 ];
 
