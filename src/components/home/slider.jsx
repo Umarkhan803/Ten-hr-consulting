@@ -11,17 +11,19 @@ const slider = [
   //   learnMoreLink: "http://localhost:5173/services/peo&eor",
   // },
   {
-    image: "https://recruitindo.com/wp-content/uploads/2023/12/recruitment.jpeg",
+    image:
+      "https://recruitindo.com/wp-content/uploads/2023/12/recruitment.jpeg",
     title: "Recruitment",
     description:
       "We provide top-tier recruitment services to find the best talent for your business.",
     secondDescription:
       "Our approach is designed to match you with the right candidates.",
     // learnMoreLink: "http://localhost:5173/services/recruitment",
-    learnMoreLink:"https://tenhrconsulting.vercel.app/services/recruitment",
+    learnMoreLink: "https://tenhrconsulting.vercel.app/services/recruitment",
   },
   {
-    image: "https://recruitindo.com/wp-content/uploads/2023/12/hr-consulting.jpeg",
+    image:
+      "https://recruitindo.com/wp-content/uploads/2023/12/hr-consulting.jpeg",
     title: "HR Consulting",
     description:
       "Our HR consulting services help you streamline your HR processes and improve employee engagement.",
@@ -30,21 +32,26 @@ const slider = [
     learnMoreLink: "https://tenhrconsulting.vercel.app/services/hrConsulting",
   },
   {
-    image: "https://recruitindo.com/wp-content/uploads/2023/12/managed-services.jpeg",
+    image:
+      "https://recruitindo.com/wp-content/uploads/2023/12/managed-services.jpeg",
     title: "Managed Services",
     description:
       "We offer comprehensive managed services to optimize your HR functions.",
     secondDescription: "Focus on your core business while we manage the rest.",
     // learnMoreLink: "http://localhost:5173/services/managedServices", // Added link for managed services
-    learnMoreLink: "https://tenhrconsulting.vercel.app/services/managedServices", 
+    learnMoreLink:
+      "https://tenhrconsulting.vercel.app/services/managedServices",
+  },
   {
-    image: "https://recruitindo.com/wp-content/uploads/2023/12/payroll-procesing.jpeg",
+    image:
+      "https://recruitindo.com/wp-content/uploads/2023/12/payroll-procesing.jpeg",
     title: "Payroll Processing",
     description:
       "Let us handle your payroll processing to ensure accuracy and compliance.",
     secondDescription: "We ensure timely and precise payroll management.",
     // learnMoreLink: "http://localhost:5173/services/payrollProcessing",
-    learnMoreLink: "https://tenhrconsulting.vercel.app/services/payrollProcessing",
+    learnMoreLink:
+      "https://tenhrconsulting.vercel.app/services/payrollProcessing",
   },
 ];
 
