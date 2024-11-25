@@ -26,7 +26,8 @@ const slider = [
     description:
       "Our HR consulting services help you streamline your HR processes and improve employee engagement.",
     secondDescription: "We specialize in compliance and efficiency.",
-    learnMoreLink: "http://localhost:5173/services/hrConsulting",
+    // learnMoreLink: "http://localhost:5173/services/hrConsulting",
+    learnMoreLink: "https://tenhrconsulting.vercel.app/services/hrConsulting",
   },
   {
     image: "https://recruitindo.com/wp-content/uploads/2023/12/managed-services.jpeg",
@@ -34,8 +35,8 @@ const slider = [
     description:
       "We offer comprehensive managed services to optimize your HR functions.",
     secondDescription: "Focus on your core business while we manage the rest.",
-    learnMoreLink: "http://localhost:5173/services/managedServices", // Added link for managed services
-  },
+    // learnMoreLink: "http://localhost:5173/services/managedServices", // Added link for managed services
+    learnMoreLink: "https://tenhrconsulting.vercel.app/services/managedServices", 
   {
     image: "https://recruitindo.com/wp-content/uploads/2023/12/payroll-procesing.jpeg",
     title: "Payroll Processing",
