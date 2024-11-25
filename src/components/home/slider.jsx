@@ -17,7 +17,8 @@ const slider = [
       "We provide top-tier recruitment services to find the best talent for your business.",
     secondDescription:
       "Our approach is designed to match you with the right candidates.",
-    learnMoreLink: "http://localhost:5173/services/recruitment",
+    // learnMoreLink: "http://localhost:5173/services/recruitment",
+    learnMoreLink:"https://tenhrconsulting.vercel.app/services/recruitment",
   },
   {
     image: "https://recruitindo.com/wp-content/uploads/2023/12/hr-consulting.jpeg",
